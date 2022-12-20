@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" style="-fx-border-color: #fca311; -fx-background-color: #14213d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.tl.administrador.ModificarAdministradorController">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Volver">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#mostrar" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Mostrar">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="153.0" layoutY="101.0" prefHeight="50.0" prefWidth="450.0" text="Nombre" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNombre" layoutX="153.0" layoutY="151.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="153.0" layoutY="199.0" prefHeight="50.0" prefWidth="450.0" text="Apellidos" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtApellidos" layoutX="153.0" layoutY="249.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="153.0" layoutY="299.0" prefHeight="50.0" prefWidth="450.0" text="Identificación" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtIdentificacion" layoutX="153.0" layoutY="349.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="153.0" layoutY="399.0" prefHeight="50.0" prefWidth="450.0" text="Correo" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCorreo" layoutX="153.0" layoutY="449.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="153.0" layoutY="499.0" prefHeight="50.0" prefWidth="450.0" text="Contraseña" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="txtContrasenna" layoutX="153.0" layoutY="549.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+        <Label layoutX="677.0" layoutY="101.0" prefHeight="50.0" prefWidth="450.0" text="Dirección" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDireccion" layoutX="677.0" layoutY="151.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="677.0" layoutY="200.0" prefHeight="50.0" prefWidth="450.0" text="Nacionalidad" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNacionalidad" layoutX="677.0" layoutY="250.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="677.0" layoutY="298.0" prefHeight="50.0" prefWidth="450.0" text="Fecha de nacimiento (AAAA-MM-DD)" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFechaNacimiento" layoutX="677.0" layoutY="348.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="677.0" layoutY="398.0" prefHeight="50.0" prefWidth="450.0" text="Género" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtGenero" layoutX="677.0" layoutY="448.0" prefHeight="50.0" prefWidth="450.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button layoutX="677.0" layoutY="524.0" mnemonicParsing="false" onAction="#modificarAdministrador" prefHeight="75.0" prefWidth="450.0" style="-fx-background-color: #fca311;" text="Guardar">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

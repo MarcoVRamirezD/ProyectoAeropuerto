@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #14213d; -fx-border-color: #fca311;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.tl.tripulante.ListaVuelosTripulanteController">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Volver">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="415.0" layoutY="97.0" mnemonicParsing="false" onAction="#cargarListaVuelos" prefHeight="81.0" prefWidth="450.0" style="-fx-background-color: #fca311;" text="Mostrar">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblVuelos" layoutX="6.0" layoutY="204.0" prefHeight="490.0" prefWidth="1270.0">
+            <columns>
+                <TableColumn fx:id="colUno" prefWidth="88.0" text="Linea aerea" />
+                <TableColumn fx:id="colDos" prefWidth="134.0" text="Aeropuerto de origen" />
+                <TableColumn fx:id="colTres" prefWidth="103.0" text="País de origen" />
+                <TableColumn fx:id="colCuatro" prefWidth="102.0" text="Hora de llegada" />
+                <TableColumn fx:id="colCinco" prefWidth="93.0" text="Hora de salida" />
+                <TableColumn fx:id="colSeis" prefWidth="64.0" text="Estado" />
+                <TableColumn fx:id="colSiete" prefWidth="134.0" text="Aeropuerto de destino" />
+                <TableColumn fx:id="colOcho" prefWidth="94.0" text="País de destino" />
+                <TableColumn fx:id="colNueve" prefWidth="97.0" text="Tipo de vuelo" />
+                <TableColumn fx:id="colDiez" prefWidth="63.0" text="Avion" />
+                <TableColumn fx:id="colOnce" prefWidth="92.0" text="Gate de salida" />
+                <TableColumn fx:id="colDoce" prefWidth="113.0" text="Gate de llegada" />
+                <TableColumn fx:id="colTrece" prefWidth="91.0" text="Tripulación" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

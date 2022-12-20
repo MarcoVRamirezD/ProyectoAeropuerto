@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PoyectoFinalBL:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PoyectoFinalBL_jar</output-path>
+    <root id="archive" name="PoyectoFinalBL.jar">
+      <element id="module-output" name="PoyectoFinalBL" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

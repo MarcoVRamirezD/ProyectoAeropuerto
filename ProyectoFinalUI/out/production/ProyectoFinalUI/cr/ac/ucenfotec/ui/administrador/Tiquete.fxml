@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" style="-fx-border-color: #fca311; -fx-background-color: #14213d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.tl.administrador.tiqueteController">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Volver">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <Label layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="250.0" text="Fecha (AAAA-MM-DD)" textFill="WHITE" />
+      <TextField fx:id="txtFecha" layoutX="14.0" layoutY="126.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="151.0" prefHeight="25.0" prefWidth="300.0" text="Pais de origen (código)" textFill="WHITE" />
+      <TextField fx:id="txtPaisOrigen" layoutX="14.0" layoutY="176.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="201.0" prefHeight="25.0" prefWidth="300.0" text="Aeropuerto de origen" textFill="WHITE" />
+      <TextField fx:id="txtAeropuertoOrigen" layoutX="14.0" layoutY="226.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="251.0" prefHeight="25.0" prefWidth="300.0" text="Pais de destino" textFill="WHITE" />
+      <TextField fx:id="txtPaisDestino" layoutX="14.0" layoutY="276.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="301.0" prefHeight="25.0" prefWidth="300.0" text="Aeropuerto de destino" textFill="WHITE" />
+      <TextField fx:id="txtAeropuertoDestino" layoutX="14.0" layoutY="326.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="351.0" prefHeight="25.0" prefWidth="300.0" text="Número de asiento" textFill="WHITE" />
+      <TextField fx:id="txtNumeroAsiento" layoutX="14.0" layoutY="376.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="401.0" prefHeight="25.0" prefWidth="300.0" text="Precio" textFill="WHITE" />
+      <TextField fx:id="txtPrecio" layoutX="14.0" layoutY="426.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="451.0" prefHeight="25.0" prefWidth="300.0" text="Número de vuelo" textFill="WHITE" />
+      <TextField fx:id="txtNumeroVuelo" layoutX="14.0" layoutY="476.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="14.0" layoutY="501.0" prefHeight="25.0" prefWidth="300.0" text="Tipo de asiento" textFill="WHITE" />
+      <TextField fx:id="txtTipoAsiento" layoutX="14.0" layoutY="526.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button layoutX="14.0" layoutY="559.0" mnemonicParsing="false" onAction="#registrarTiquete" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Registrar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="114.0" layoutY="559.0" mnemonicParsing="false" onAction="#modificarTiquete" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="214.0" layoutY="559.0" mnemonicParsing="false" onAction="#eliminarTiquete" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #fca311;" text="Eliminar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+        <Button layoutX="574.0" layoutY="111.0" mnemonicParsing="false" onAction="#cargarlistaTiquetes" prefHeight="81.0" prefWidth="450.0" style="-fx-background-color: #fca311;" text="Mostrar">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblTiquetes" layoutX="325.0" layoutY="202.0" onMouseClicked="#cargarTiquete" prefHeight="398.0" prefWidth="948.0">
+            <columns>
+                <TableColumn fx:id="colUno" prefWidth="85.0" text="Fecha" />
+                <TableColumn fx:id="colDos" prefWidth="96.0" text="Pais de origen" />
+                <TableColumn fx:id="colTres" prefWidth="128.0" text="Aeropuerto de origen" />
+                <TableColumn fx:id="colCuatro" prefWidth="92.0" text="Pais de destino" />
+                <TableColumn fx:id="colCinco" prefWidth="135.0" text="Aeropuerto de destino" />
+                <TableColumn fx:id="colSeis" prefWidth="112.0" text="Numero de asiento" />
+            <TableColumn fx:id="colSiete" prefWidth="83.0" text="Precio" />
+            <TableColumn fx:id="colOcho" prefWidth="111.0" text="Número de vuelo" />
+            <TableColumn fx:id="colNueve" prefWidth="104.0" text="Tipo de asiento" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
